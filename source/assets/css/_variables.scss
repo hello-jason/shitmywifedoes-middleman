@@ -1,0 +1,17 @@
+$brand-primary: #463827;
+
+$body-bg: #FFF5FB;
+
+// Grid system
+$grid-gutter-width: 30px;
+
+//  Container sizes
+$container-sm: (720px + $grid-gutter-width);
+$container-md: $container-sm;
+$container-lg: $container-sm;
+
+// Media queries breakpoints
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: $screen-sm;
+$screen-lg: $screen-sm;

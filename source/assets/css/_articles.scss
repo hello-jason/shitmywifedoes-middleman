@@ -1,0 +1,24 @@
+article {
+  &.panel {
+    box-shadow: 0 0 13px rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    img {
+      @extend .img-responsive;
+    }
+    .panel-heading {
+      background: none;
+      padding-top: 20px;
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    .panel-footer {
+      border-radius: 0 0 12px 12px;
+      font-style: italic;
+    }
+  }
+}
