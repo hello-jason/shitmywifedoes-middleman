@@ -132,13 +132,14 @@ configure :build do
   activate :gzip
 
   # Enable cache buster
-  activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
+  activate :asset_hash, :exts => ['.css']
 
   # Ignore files/dir during build process
   ignore "environment_variables.rb"
   ignore "environment_variables.rb.sample"
   ignore "favicon_template.png"
   ignore "imageoptim.manifest.yml"
+  ignore "assets/js"
 
   # Compress and optimise images during build
   # Documentation: https://github.com/plasticine/middleman-imageoptim
