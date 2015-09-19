@@ -29,5 +29,6 @@ html.no-js
     #wrap
       main role="document"
         .container
+          = partial "_partials/navigation"
           == yield
-    == javascript_include_tag "echo.js", "main.js"
+          = partial "_partials/navigation"

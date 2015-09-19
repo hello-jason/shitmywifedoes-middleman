@@ -4,4 +4,26 @@ body {
   background-attachment: fixed;
   background-position: center -52px;
   margin-top: 317px;
+  margin-bottom: $grid-gutter-width;
+  &.index {
+    .pagination {
+      li.page-index {
+        @extend .active;
+      }
+    }
+  }
+  &.page2 {
+    .pagination {
+      li.page-2 {
+        @extend .active;
+      }
+    }
+  }
+  &.page3 {
+    .pagination {
+      li.page-3 {
+        @extend .active;
+      }
+    }
+  }
 }

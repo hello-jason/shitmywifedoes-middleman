@@ -11,7 +11,7 @@ require "./source/environment_variables.rb"
 # Site settings
 # ========================================================================
 set :site_title,            "Shit My Wife Does"
-set :site_description,      "This is an example meta description."
+set :site_description,      "Miscellaneous shit that my wife does."
 set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']
 set :css_dir,               'assets/css'
@@ -20,8 +20,9 @@ set :images_dir,            'assets/img'
 set :fonts_dir,             'assets/fonts'
 
 # Sitemap URLs (use trailing slashes)
-set :url_sample,            "/sample/"
-# Place additional URLs here...
+set :url_home,              "/"
+set :url_page2,             "/page2/"
+set :url_page3,             "/page3/"
 
 # Slim template engine
 require "slim"
@@ -99,7 +100,7 @@ helpers do
         <h1>#{title}</h1>
       </div>
       <div class='panel-body'>
-        <img data-echo='#{images_dir}/#{image}'>
+        <img src='/#{images_dir}/#{image}'>
       </div>
       <div class='panel-footer'>
         <time datetime='#{datetime}'>#{date_human_readable}</time>
@@ -182,11 +183,9 @@ end
 # ========================================================================
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method       = :rsync
-  deploy.host         = 'server'
-  deploy.user         = 'username'
-  deploy.path         = 'path/to/docroot'
-  # Optional Settings
-  # deploy.port       = 5309 # ssh port, default: 22
-  # deploy.clean      = true # remove orphaned files on remote host, default:  false
+  deploy.method       = :git
+  deploy.remote       = 'origin'
+  deploy.branch       = 'gh-pages'
+  deploy.strategy     = :force_push
+  deploy.clean        = true
 end
