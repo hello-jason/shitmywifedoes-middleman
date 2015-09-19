@@ -10,8 +10,6 @@ Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemana
 * [Slim](http://slim-lang.com/)
 * [Sass](http://sass-lang.com/)
 * [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
-* [Font Awesome](http://fontawesome.io)
-* [jQuery](http://jquery.com/)
 * [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
 
 **Included features:**
@@ -22,7 +20,6 @@ Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemana
 * Image compression
 * Asset minification
 * Favicon generation
-* Live Reload
 
 ## Setup in development
 
@@ -74,7 +71,7 @@ bundle exec middleman build
 ```
 
 ## Deploying
-Middleman-deploy can deploy a site via rsync, ftp, sftp, or git. Configure the deployment section of `config.rb`, then run the deploy command. Note, this will build for you before deploying.
+Middleman-deploy will deploy to GitHub Pages. Running the deploy command. Note, this will build for you before deploying.
 ```bash
 bundle exec middleman deploy
 ```
