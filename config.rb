@@ -93,7 +93,7 @@ helpers do
   # = post "Post title", "image-name.jpg", "2015-09-05"
   def post(title, image, datetime)
     date_object = datetime.to_time
-    date_human_readable = date_object.strftime('%B %m, %Y')
+    date_human_readable = date_object.strftime('%B %d, %Y')
     "
     <article class='panel'>
       <div class='panel-heading'>
