@@ -1,8 +1,8 @@
 # Shit My Wife Does
 
-http://shitmywifedoes.com
+[http://shitmywifedoes.com](http://shitmywifedoes.com)
 
-Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemanapp.com)
+Just a website about my wife. Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemanapp.com)
 
 **Included packages:**
 
