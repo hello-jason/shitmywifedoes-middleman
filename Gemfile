@@ -6,7 +6,6 @@ gem "middleman", "3.4.0"
 
 # Assets
 gem "bootstrap-sass", "~> 3.3.5.1", require: false
-gem "middleman-favicon-maker", "~> 3.7"
 
 # Templating
 gem "slim", "~> 3.0.6"
