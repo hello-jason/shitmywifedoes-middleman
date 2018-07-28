@@ -23,6 +23,7 @@ set :fonts_dir,             'assets/fonts'
 set :url_home,              "/"
 set :url_page2,             "/page2/"
 set :url_page3,             "/page3/"
+set :url_page4,             "/page4/"
 
 # Slim template engine
 require "slim"

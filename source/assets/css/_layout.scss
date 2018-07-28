@@ -26,4 +26,18 @@ body {
       }
     }
   }
+  &.page4 {
+    .pagination {
+      li.page-4 {
+        @extend .active;
+      }
+    }
+  }
+  &.page5 {
+    .pagination {
+      li.page-5 {
+        @extend .active;
+      }
+    }
+  }
 }
